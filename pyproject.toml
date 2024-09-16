@@ -5,17 +5,16 @@ description = "Demonstrates creating faces with a GAN"
 authors = ["Adrien Treuille <adrien.g.treuille@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.6,<=3.7.16"
+python = ">=3.8,<3.13"  # Updated to support Python 3.8 and above
 streamlit = ">=1.2.0"
-tensorflow = ">=1.15.4,<2.0"
-scikit_learn = ">=0.20.0"
+tensorflow = ">=2.0,<3.0"  # TensorFlow 1.x is incompatible with Python 3.8; updated to TensorFlow 2.x
+scikit_learn = ">=0.20.0,<1.0"  # You may want to update to a more recent version if possible
 
 [tool.poetry.dev-dependencies]
 black = "*"  # Pretty formatting of Python code
-pynvim = "*" # Allows nvim users to use black formatting
+pynvim = "*"  # Allows nvim users to use black formatting
 
 [[tool.poetry.source]]
 name = 'default'
 url = 'https://pypi.python.org/simple'
-secondary = false
-
+priority = 'default'  # Replaced 'secondary' with 'priority' as recommended by Poetry
