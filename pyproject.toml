@@ -17,4 +17,4 @@ pynvim = "*"  # Allows nvim users to use black formatting
 [[tool.poetry.source]]
 name = 'default'
 url = 'https://pypi.python.org/simple'
-priority = 'default'  # Replaced 'secondary' with 'priority' as recommended by Poetry
+priority = 'primary'  # Replaced 'secondary' with 'priority' as recommended by Poetry
