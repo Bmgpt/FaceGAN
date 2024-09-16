@@ -9,6 +9,8 @@ python = ">=3.8,<3.13"  # Updated to support Python 3.8 and above
 streamlit = ">=1.2.0"
 tensorflow = ">=2.0,<3.0"  # TensorFlow 1.x is incompatible with Python 3.8; updated to TensorFlow 2.x
 scikit_learn = ">=0.20.0,<1.0"  # You may want to update to a more recent version if possible
+gitpython = "^3.1.31"  # Updated to the latest stable version
+jupyter-client = "^7.0.6"
 
 [tool.poetry.dev-dependencies]
 black = "*"  # Pretty formatting of Python code
